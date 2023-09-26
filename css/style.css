@@ -57,7 +57,6 @@ main{
 
 .row{
     margin: 30px 0px;
-    width: calc(100% / 6);
 }
 
 img{
@@ -66,20 +65,23 @@ img{
 }
 
 .card{
-    width: 100%;
+    width: calc(100% / 6 - 10px);
+    margin-right: 10px;
+
 }
 
 .card-image{
-    width: 180px;
-    margin: 5px;
+    width: 100%;
 }
 
 .card-text{
+    width: 100%;
+    font-size: 11px;
     padding: 5px;
 }
 
 h3{
-    padding: 3px;
+    padding: 10px;
 }
 
 /* utilityes */
@@ -90,6 +92,10 @@ h3{
 
 .text-center{
     text-align: center;
+}
+
+.wrap{
+    flex-wrap: wrap;
 }
 
 /* Playbar */
