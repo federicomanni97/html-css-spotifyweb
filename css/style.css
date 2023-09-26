@@ -55,11 +55,42 @@ main{
     z-index: 1000;
 }
 
+.row{
+    margin: 30px 0px;
+    width: calc(100% / 6);
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.card{
+    width: 100%;
+}
+
+.card-image{
+    width: 180px;
+    margin: 5px;
+}
+
+.card-text{
+    padding: 5px;
+}
+
+h3{
+    padding: 3px;
+}
+
+/* utilityes */
+
 .d-flex{
     display: flex;
 }
 
-
+.text-center{
+    text-align: center;
+}
 
 /* Playbar */
 
