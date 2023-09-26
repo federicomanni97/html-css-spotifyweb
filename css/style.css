@@ -53,6 +53,7 @@ main{
     top: 0;
     right: 0;
     z-index: 1000;
+    opacity: 0.5;
 }
 
 .row{
@@ -66,12 +67,32 @@ img{
 
 .card{
     width: calc(100% / 6 - 10px);
-    margin-right: 10px;
-
+    margin-right: 25px;
 }
 
 .card-image{
     width: 100%;
+    position: relative;
+    transition: all 1.5s;
+}
+
+.icon-hover{
+    font-size: 60px;
+    color: var(--color-white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.card-image:hover{
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.card-image:hover .icon-hover{
+    display: block;
 }
 
 .card-text{
