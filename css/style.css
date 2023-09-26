@@ -33,7 +33,19 @@ main{
     width: 250px;
     background-color: var(--color-black);
     height: 100%;
-    
+}
+
+#side-bar img{
+    width: 170px;
+    padding: 10px 5px;
+}
+
+#side-bar .fa-solid{
+    font-size: 25px;
+}
+
+#side-bar li{
+    padding: 10px 5px;
 }
 
 #main-content{
@@ -111,6 +123,7 @@ h2{
     color: var(--color-white);
 }
 
+
 p{
     padding: 10px 0px;
 }
@@ -128,7 +141,7 @@ li{
     margin-bottom: 30px;
 }
 
-nav ul{
+#main-content nav ul{
     display: flex;
     justify-content: center;
 }
@@ -160,6 +173,10 @@ a{
 
 .space-between{
     justify-content: space-between;
+}
+
+.white{
+    color: var(--color-white);
 }
 
 /* Playbar */
