@@ -36,8 +36,8 @@ main{
 }
 
 #side-bar img{
-    width: 170px;
-    padding: 10px 5px;
+    width: 130px;
+    margin: 12px 5px;
 }
 
 .column{
@@ -60,6 +60,7 @@ main{
 
 #side-bar li:hover{
     font-size: 16px;
+    border-left: solid 2px var(--color-highlight); 
     transition: 0.5s;
 }
 
@@ -69,6 +70,10 @@ main{
 
 #side-bar #user{
     font-size: 15px;
+}
+
+#side-bar ol{
+    display: none;
 }
 
 #side-bar #info{
@@ -115,7 +120,7 @@ main{
 
 button{
     background-color: var(--color-black);
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 30px;
     padding: 8px;
     color: var(--color-white);
@@ -172,7 +177,7 @@ img{
 
 .card-text{
     width: 100%;
-    font-size: 15px;
+    font-size: 12px;
     padding: 5px;
 }
 
@@ -302,7 +307,7 @@ a{
 }
 
 #playbar #play{
-    font-size: 21px;
+    font-size: 30px;
 }
 
  input[type="range"]{
@@ -313,6 +318,12 @@ a{
     vertical-align: middle;
 }
 
+#playbar i:hover{
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.5s;
+    color: var(--color-highlight);
+}
 
 .playbar-center input[type="range"]{
     width: 300px;
@@ -347,6 +358,10 @@ a{
 
 }
 
+#logosmall img{
+    width: 40px;
+    display: none;
+}
 @media screen and (max-width:1200px){
     
     .wrap{
@@ -357,27 +372,82 @@ a{
         width: calc(100% / 4 - 30px);
     }
 
+    .card-text{
+        font-size: 10px;
+        padding-bottom: 10px;
+    }
+
 }
 
 @media screen and (max-width:992px){
     
     .card{
-        width: calc(100% / 3 - 30px);
+        width: calc(100% / 4 - 30px);
     }
 
 }
 
 @media screen and (max-width:768px){
+    
+    #main-content{
+        width: calc(100% - 50px);
+    }
+
+    #top-bar{
+        width: calc(100% - 50px);
+    }
 
     .card{
-        width: calc(100% / 2 - 30px);
+        width: calc(100% / 3 - 30px);
+    }
+
+    #side-bar{
+            width: 50px;
+    }
+
+    #logosmall img{
+        display: block;
+    }
+
+    #big-logo img{
+        display: none;
+    }
+
+    #side-bar ul{
+        display: none;
     }
     
+    #side-bar ol{
+        display: block;
+    }
+
+    h4{
+        display: none;
+    }
+
+    #bot-sidebar ol{
+        display: block;
+    }
+    
+    #side-bar #user{
+        font-size: 22px;
+    }
+
+    #side-bar li{
+        text-align: center;
+    }
+
+    #side-bar #info{
+        font-size: 22px;
+    }
+
 }
+
+
 @media screen and (max-width:576px){
 
     .card{
-        width: calc(100% / 1 - 30px);
+        width: calc(100% / 2 - 30px);
     }
     
 }
