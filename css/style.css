@@ -265,22 +265,36 @@ a{
 }
 
 #playbar img{
-    width: 70px;
+    width: 60px;
 }
 
 #playbar h3{
-    font-size: 15px;
+    font-size: 12px;
+    padding: 3px 10px;
 }
 
+#playbar p{
+    padding: 3px 10px;
+    color: var(--color-white);
+    font-size: 9px;
+}
+
+#playbar .fa-heart{
+    color: var(--color-grey);
+}
+
+#playbar .fa-folder{
+    color: var(--color-grey);
+}
 
 #playbar i{
     padding: 0px 15px;
-    font-size: 20px;
+    font-size: 15px;
     color: var(--color-white);
 }
 
 #playbar #play{
-    font-size: 30px;
+    font-size: 23px;
 }
 
  input[type="range"]{
@@ -288,7 +302,6 @@ a{
     width: 100px;
     height: 3px;
     background-color: var(--color-grey);
-    -webkit-appearance: none;
     vertical-align: middle;
 }
 
@@ -307,7 +320,7 @@ a{
     width: 100%;
     left: 0;
     background-color: var(--color-highlight);
-    transition: 0.5s;
+    transition: 0.3s;
     transition-timing-function: ease-in-out;
     transform: scaleX(0);
 }
