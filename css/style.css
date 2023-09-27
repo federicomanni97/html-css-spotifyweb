@@ -243,6 +243,10 @@ a{
     color: var(--color-white);
 }
 
+.j-content{
+    justify-content: center;
+}
+
 .overflow{
     overflow-y: auto;
 }
@@ -250,6 +254,10 @@ a{
 .border-top{
     border-top: 1px solid var(--color-grey)
 
+}
+
+.items-center{
+    align-items: center;
 }
 
 /* Playbar */
@@ -294,7 +302,7 @@ a{
 }
 
 #playbar #play{
-    font-size: 23px;
+    font-size: 21px;
 }
 
  input[type="range"]{
@@ -305,6 +313,11 @@ a{
     vertical-align: middle;
 }
 
+
+.playbar-center input[type="range"]{
+    width: 300px;
+    margin: 15px 0px;
+}
 /* hover #main-content a*/
 
 #main-content ul li a{
