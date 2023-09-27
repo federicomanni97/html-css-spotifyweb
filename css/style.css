@@ -40,8 +40,17 @@ main{
     padding: 10px 5px;
 }
 
+.column{
+    flex-direction: column;
+}
+
 #side-bar .fa-solid{
     font-size: 25px;
+}
+
+#side-bar h4{
+    padding: 6px 5px;
+    margin: 5px;
 }
 
 #side-bar li{
@@ -50,6 +59,26 @@ main{
 
 #side-bar a:hover{
     color: var(--color-white);
+}
+
+#side-bar #user{
+    font-size: 15px;
+}
+
+#side-bar #info{
+    font-size: 15px;
+}
+
+.top-sidebar{
+    height: calc(100% - 80px);
+}
+
+#bot-sidebar{
+    height: 80px;
+    color: var(--color-grey);
+    position: relative;
+    bottom: 60px;
+    background-color: var(--color-black);
 }
 
 #main-content{
@@ -148,8 +177,9 @@ li{
 #main-content nav ul{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0px;
 }
-
 
 a{
     text-decoration: none;
@@ -167,10 +197,6 @@ a{
     text-align: center;
 }
 
-.wrap{
-    flex-wrap: wrap;
-}
-
 .circle img{
     border-radius: 50%;
 }
@@ -179,8 +205,21 @@ a{
     justify-content: space-between;
 }
 
+.itemscenter{
+    align-items: center;
+}
+
 .white{
     color: var(--color-white);
+}
+
+.overflow{
+    overflow-y: auto;
+}
+
+.border-top{
+    border-top: 1px solid var(--color-grey)
+
 }
 
 /* Playbar */
@@ -217,4 +256,39 @@ a{
 
 #main-content ul li a:hover::after{
     transform: scaleX(1);
+}
+
+@media screen and (max-width:1200px){
+    
+    .wrap{
+         flex-wrap: wrap;
+    }
+
+    .card{
+        width: calc(100% / 4 - 30px);
+    }
+
+}
+
+@media screen and (max-width:992px){
+    
+    .card{
+        width: calc(100% / 3 - 30px);
+    }
+
+}
+
+@media screen and (max-width:768px){
+
+    .card{
+        width: calc(100% / 2 - 30px);
+    }
+    
+}
+@media screen and (max-width:576px){
+
+    .card{
+        width: calc(100% / 1 - 30px);
+    }
+    
 }

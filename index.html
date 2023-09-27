@@ -17,14 +17,15 @@
             <nav id="side-bar">
                 <div>
                     <img src="img/logo.svg" alt="">
-                </div>
+                </div>  
+              <div class="d-flex column top-sidebar">    
                 <ul>
                     <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
                     <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i> Cerca</a></li>
                     <li><a href="#"><i class="fa-solid fa-book"></i> La tua libreria</a></li>
                 </ul>
-                <ul>
-                    <li><a href="" class="white">PLAYLIST</a></li>
+                <h4 class="white">PLAYLIST</h4>
+                <ul class="overflow">
                     <li><a href=""><i class="fa-solid fa-square-plus"></i> Crea Playlist</a></li>
                     <li><a href="">Nome Playlist</a></li>
                     <li><a href="">Nome Playlist</a></li>
@@ -34,6 +35,13 @@
                     <li><a href="">Nome Playlist</a></li>
                     <li><a href="">Nome Playlist</a></li>
                 </ul>
+              </div>
+              <div id="bot-sidebar">
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-circle-info" id="info"></i> Installa app</a></li>
+                    <li class="border-top"><a href="#" class="white"><i class="fa-solid fa-circle-user" id="user"></i> Federico Manni</a></li>
+                </ul>
+              </div>    
             </nav>
             <section id="main-content">
                 <nav>  
@@ -48,8 +56,8 @@
                 </nav>
                 <!--recently played-->
                 <h2>Recently Played</h2>
-                <div class="row d-flex">
-                    <div class="card">
+                <div class="row d-flex wrap">
+                    <div class="card wrap">
                         <div class="card-image">
                             <img src="img/metal_lifting.jpg" alt="metal">
                             <i class="fa-regular fa-circle-play icon-hover"></i>
@@ -158,7 +166,11 @@
                 </div>    
             </section>
         </main>
-        <div id="playbar"></div>
+        <div id="playbar" class="d-flex space-between itemscenter">
+            <div>left</div>
+            <div>center</div>
+            <div>right</div>
+        </div>
     </div>
 </body>
 </html>
