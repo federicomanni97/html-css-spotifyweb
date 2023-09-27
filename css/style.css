@@ -471,5 +471,9 @@ a{
     .card{
         width: calc(100% / 2 - 30px);
     }
+
+    .hidden2{
+        display: none;
+    }
     
 }
