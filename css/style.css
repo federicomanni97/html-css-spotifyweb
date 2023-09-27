@@ -201,12 +201,12 @@ li{
 }
 
 #main-content li{
-    margin: 0px 10px;
+    margin: 7px 10px;
 
 }
 
 #main-content nav{
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 #main-content nav ul{
@@ -250,6 +250,14 @@ a{
 
 .j-content{
     justify-content: center;
+}
+
+.content-center{
+    align-content: center;
+}
+
+.flex-end{
+    justify-content: flex-end;
 }
 
 .overflow{
@@ -301,7 +309,7 @@ a{
 }
 
 #playbar i{
-    padding: 0px 15px;
+    padding: 0px 10px;
     font-size: 15px;
     color: var(--color-white);
 }
@@ -329,6 +337,7 @@ a{
     width: 300px;
     margin: 15px 0px;
 }
+
 /* hover #main-content a*/
 
 #main-content ul li a{
@@ -355,13 +364,17 @@ a{
 
 .marginlr{
     margin: 0px 10px;
-
 }
 
 #logosmall img{
     width: 40px;
     display: none;
 }
+
+.box-playbar{
+    width: 250px;
+}
+
 @media screen and (max-width:1200px){
     
     .wrap{
@@ -383,6 +396,10 @@ a{
     
     .card{
         width: calc(100% / 4 - 30px);
+    }
+
+    .hidden{
+        display: none;
     }
 
 }
@@ -439,6 +456,11 @@ a{
 
     #side-bar #info{
         font-size: 22px;
+    }
+    
+    #playbar i{
+        padding: 0px 6px;
+        font-size: 12px;
     }
 
 }
