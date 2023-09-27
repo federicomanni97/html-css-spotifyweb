@@ -55,6 +55,12 @@ main{
 
 #side-bar li{
     padding: 6px 5px;
+    font-size: 15px;
+}
+
+#side-bar li:hover{
+    font-size: 16px;
+    transition: 0.5s;
 }
 
 #side-bar a:hover{
@@ -99,6 +105,30 @@ main{
     right: 0;
     z-index: 1000;
     opacity: 0.5;
+}
+
+.box-button{
+    width: 100%;
+    height: 75px;
+    position: relative;
+}
+
+button{
+    background-color: var(--color-black);
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 8px;
+    color: var(--color-white);
+    position: absolute;
+    right: 40px;
+    top: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+    padding: 12px;
+    transition: 0.5s;
+
 }
 
 .row{
@@ -234,6 +264,34 @@ a{
     left: 0;
 }
 
+#playbar img{
+    width: 70px;
+}
+
+#playbar h3{
+    font-size: 15px;
+}
+
+
+#playbar i{
+    padding: 0px 15px;
+    font-size: 20px;
+    color: var(--color-white);
+}
+
+#playbar #play{
+    font-size: 30px;
+}
+
+ input[type="range"]{
+    margin-right: 15px;
+    width: 100px;
+    height: 3px;
+    background-color: var(--color-grey);
+    -webkit-appearance: none;
+    vertical-align: middle;
+}
+
 /* hover #main-content a*/
 
 #main-content ul li a{
@@ -256,6 +314,11 @@ a{
 
 #main-content ul li a:hover::after{
     transform: scaleX(1);
+}
+
+.marginlr{
+    margin: 0px 10px;
+
 }
 
 @media screen and (max-width:1200px){

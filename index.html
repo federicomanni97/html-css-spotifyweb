@@ -12,7 +12,11 @@
 </head>
 <body>
     <div class="wrapper">
-        <div id="top-bar"></div>  
+        <div id="top-bar">
+            <div class="box-button">
+            <button>EFFETTUA L'UPGRADE</button>
+            </div>
+        </div>  
         <main class="d-flex">
             <nav id="side-bar">
                 <div>
@@ -167,9 +171,37 @@
             </section>
         </main>
         <div id="playbar" class="d-flex space-between itemscenter">
-            <div>left</div>
-            <div>center</div>
-            <div>right</div>
+            <div class="d-flex itemscenter marginlr">
+              <div>  
+                <img src="img/sinister.jpeg" alt="sinister2">
+              </div>
+              <div>  
+                <span>Sinister</span>
+                <span>Subtitle</span>
+              </div>
+              <div>
+                <span><i class="fa-regular fa-heart"></i></span>
+              </div>
+              <div>
+                <span><i class="fa-regular fa-folder"></i></span>
+              </div>
+            </div>  
+            <div>
+                <i class="fa-solid fa-repeat"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-regular fa-circle-play" id="play"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-rotate-right"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-list-ul"></i>
+                <i class="fa-solid fa-display"></i>
+                <i class="fa-solid fa-volume-high"></i> 
+                <input type="range" id="vol" name="vol" min="0" max="10">
+            </div>
+        </div>
+        <div>
+            <input type="range" id="vol" name="vol" min="0" max="10">
         </div>
     </div>
 </body>
