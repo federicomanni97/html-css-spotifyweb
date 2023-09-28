@@ -329,6 +329,11 @@ a{
     cursor: pointer;
 }
 
+input[type="range"]:hover{
+    overflow: visible;
+    accent-color: var(--color-highlight);
+}
+
 #playbar i:hover{
     cursor: pointer;
     font-size: 20px;
