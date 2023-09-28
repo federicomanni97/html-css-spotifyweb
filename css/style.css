@@ -324,6 +324,7 @@ a{
     height: 3px;
     background-color: var(--color-grey);
     vertical-align: middle;
+    overflow: hidden;
 }
 
 #playbar i:hover{
