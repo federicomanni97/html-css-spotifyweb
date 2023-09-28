@@ -341,6 +341,12 @@ a{
     margin: 15px 0px;
 }
 
+#playbar span{
+    color: var(--color-white);
+    font-size: 12px;
+    padding: 0px 10px;
+}
+
 /* hover #main-content a*/
 
 #main-content ul li a{
