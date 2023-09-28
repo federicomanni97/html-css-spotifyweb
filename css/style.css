@@ -472,6 +472,10 @@ a{
         font-size: 12px;
     }
 
+    .hidden2 {
+        display: none;
+    }
+
 }
 
 
@@ -486,3 +490,15 @@ a{
     }
     
 }
+
+@media screen and (max-width:425px){
+
+    .card{
+        width: calc(100% / 1 - 30px);
+    }
+
+    #playbar{
+        justify-items: center;
+    }
+}
+    
