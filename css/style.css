@@ -325,6 +325,8 @@ a{
     background-color: var(--color-grey);
     vertical-align: middle;
     overflow: hidden;
+    accent-color: var(--color-grey);
+    cursor: pointer;
 }
 
 #playbar i:hover{
